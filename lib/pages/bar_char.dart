@@ -56,7 +56,7 @@ class TopWordsBarChart extends StatelessWidget {
                 width: 1,
               ),
             ),
-            gridData: FlGridData(show: false),
+            gridData: FlGridData(show: true),
             barGroups: bars,
           ),
         ),

@@ -39,6 +39,10 @@ dependencies:
   shared_preferences: ^2.2.3
   fl_chart: ^0.68.0
   bubble_chart: ^0.4.0
+  firebase_core: ^3.3.0
+  cloud_firestore: ^5.2.1
+  path_provider: ^2.1.4
+  dart_sentiment: ^0.0.9
 
 dev_dependencies:
   flutter_test:

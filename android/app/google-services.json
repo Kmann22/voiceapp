@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "727536888892",
+    "project_id": "voiceapp-a57e3",
+    "storage_bucket": "voiceapp-a57e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727536888892:android:cb5833604c8dd9f7686739",
+        "android_client_info": {
+          "package_name": "com.example.micapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLrdStGEh6ihii12kOYj64JdmvzUi4cxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

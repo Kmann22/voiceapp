@@ -1,3 +1,5 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
@@ -6,7 +8,11 @@ import 'dart:convert';
 
 import 'pages/word_frequency.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(MyApp());
 }
 
@@ -15,6 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'AI-Powered Word Counter',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
         primaryColor: Colors.amber,
@@ -198,9 +205,9 @@ class _WordCounterScreenState extends State<WordCounterScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('AI-Powered Word Counter'),
-      ),
+      // appBar: AppBar(
+      //   title: Text('AI-Powered Word Counter'),
+      // ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
